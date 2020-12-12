@@ -1,10 +1,12 @@
 package com.example.superpupermegaapp.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -29,6 +31,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import static androidx.core.content.ContextCompat.getSystemService;
 
 public class JokeFragment extends Fragment {
 

@@ -1,5 +1,6 @@
 package com.example.superpupermegaapp.Fragments;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class WebFragment extends Fragment {
         setRetainInstance(true);
         View view = inflater.inflate(R.layout.fragment_web,
                 container, false);
+
         webView = (WebView)view.findViewById(R.id.webView);
 
         if(savedInstanceState != null){

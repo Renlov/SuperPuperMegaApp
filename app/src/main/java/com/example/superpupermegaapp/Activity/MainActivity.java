@@ -41,9 +41,11 @@ private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSele
                     switch (item.getItemId()) {
                         case R.id.Jokes:
                             loadFragment(JokeFragment.newInstance());
+                            setTitle("Jokes");
                             return true;
                         case R.id.Web:
                             loadFragment(WebFragment.newInstance());
+                            setTitle("Web");
                             return true;
                     }
                     return false;
@@ -67,6 +69,7 @@ private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSele
 
         if(savedInstanceState == null){
             loadFragment(JokeFragment.newInstance());
+            setTitle("Jokes");
         }
 
 
