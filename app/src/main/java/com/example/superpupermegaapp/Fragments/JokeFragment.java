@@ -1,6 +1,7 @@
 package com.example.superpupermegaapp.Fragments;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +39,7 @@ public class JokeFragment extends Fragment {
     final String url = "http://api.icndb.com/jokes/random/";
     private EditText editText;
     private Button button;
-    private Fragment fragment;
-
+    Parcelable parcelable;
 
     JokeFragment() {
 
@@ -52,6 +52,13 @@ public class JokeFragment extends Fragment {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
+        outState.putParcelable("StoreRecyclerView", recyclerView.getLayoutManager().onSaveInstanceState());
+    }
+
+    @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+
     }
 
     @Override
