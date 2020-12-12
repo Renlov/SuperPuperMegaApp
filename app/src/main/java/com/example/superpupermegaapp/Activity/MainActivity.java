@@ -65,6 +65,10 @@ private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSele
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        if(savedInstanceState == null){
+            loadFragment(JokeFragment.newInstance());
+        }
+
 
     }
 }
