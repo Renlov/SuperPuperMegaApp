@@ -66,6 +66,7 @@ public class JokeFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                jokes.clear();
                 getJokes();
             }
         });

@@ -33,13 +33,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private JokeAdapter jokeAdapter;
-    private ArrayList<Joke> jokes;
-    private RequestQueue requestQueue;
-    final String url = "http://api.icndb.com/jokes/random/";
-    private EditText editText;
-    private Button button;
 
 private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
