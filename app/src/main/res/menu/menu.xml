@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Jokes"
+        android:title="Jokes"
+        android:icon="@drawable/ic_baseline_add_reaction_24"
+        />
+    <item
+        android:id="@+id/Web"
+        android:title="Web"
+        android:icon="@drawable/ic_baseline_web_24"
+        />
+</menu>
